@@ -1,13 +1,256 @@
 body {
+  background-image: url('../public/assets/f4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.new-card {
+  width: 100%;
+  display: flex;
+}
+
+.div-table-2 {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px 100px 0px;
+  width: 50%;
+  height: 450px;
+  /* overflow-y: auto; */
+  padding: 15px;
+}
+
+.div-calculator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Calculator', sans-serif;      
+  width: 50%;
+  height: 500px;                                        
+}
+
+.calculator {
+  background: white;
+  height: 330px;
+  width: 200px;
+  border-radius: 15px;
+}
+
+.btn-calc {
+  width: 25%;
+  height: 50px;
+  background: white;
+  border: solid #BEBEBE 0.5px;
+  font-family: 'Poppins';
+  transition: all 0.5s;
+}
+
+.btn-calc:hover {
+  cursor: pointer;
+  background: #BEBEBE;
+}
+
+.btn-calc-2 {
+  width: 33.7%;
+  height: 50px;
+  background: white;
+  border: solid #BEBEBE 0.5px;
+  font-family: 'Poppins';
+  transition: all 0.5s;
+}
+
+.btn-calc-2:hover {
+  cursor: pointer;
+  background: #BEBEBE;
+}
+
+.btn-calc-3 {
+  width: 100%;
+  height: 100%;
+  background: #007BFF;
+  border: solid #BEBEBE 0.5px;
+  transition: all 0.5s;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-calc-3:hover {
+  cursor: pointer;
+  background: #BEBEBE;
+}
+
+.center-a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tr {
+  background: transparent;
+  border: solid transparent 0px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.result {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-right: 10px;
+  padding-left: 13px;
+  /* margin-bottom: 15px; */
+  color: black;
+  font-size: 30px;
+  word-wrap: break-word;
+}
+
+.result-two {
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 10px;
+  color: #BEBEBE;
+  font-size: 20px;
+  padding-top: 5px;
+  word-wrap: break-word;
+  /* margin-top: 15px; */
+}
+
+.br-1 {
+  border-bottom-left-radius: 15px;
+}
+
+.br-2 {
+  border-bottom-right-radius: 15px;
+}
+
+.color-btn {
+  color: #007BFF;
+}
+
+.btn-add {
+  border: solid 2px #007BFF !important;
+  margin-bottom: 5px;
+}
+
+.visible {
+  max-height: 1300px;
+  /* transform: translateY(0px); */
+  transition: all 0.5s ease-in;			
+}
+
+.oculto {
+  max-height: 0;			
+  /* transform: translateY(-330px); */
+  transition: all 0.5s ease-out;					
+  opacity: 0;
+}
+
+.input {
+  border: solid transparent 0px;
+  font-family: 'Calculator', sans-serif;      
+  font-size: 30px;
+  width: auto;
+}
+
+.contenedor {
+  /* word-wrap: break-word; */
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 10px;
+}
+
+.div-table {
+  padding: 50px;
+}
+
+.contenedor::-webkit-scrollbar:vertical, .div-table::-webkit-scrollbar:vertical {
+  width: 3px;
+}
+
+.contenedor::-webkit-scrollbar, .div-table::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.contenedor::-webkit-scrollbar:vertical, .div-table::-webkit-scrollbar:vertical {
+  width:10px;
+}
+
+.contenedor::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button, .div-table::-webkit-scrollbar-button:increment,.div-table::-webkit-scrollbar-button {
+  display: none;
+} 
+
+.contenedor::-webkit-scrollbar:horizontal, .div-table::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+.contenedor::-webkit-scrollbar-thumb, .div-table::-webkit-scrollbar-thumb {
+  background-color: #b4b4b421;
+  border-radius: 20px;
+  border: 2px solid #f1f2f3;
+}
+
+.contenedor::-webkit-scrollbar-track, .div-table::-webkit-scrollbar-track {
+  border-radius: 10px;  
+}
+
+/****************************************************/
+
+.div-table::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.div-table::-webkit-scrollbar:vertical {
+  width:10px;
+}
+
+.div-table::-webkit-scrollbar-button:increment,.div-table::-webkit-scrollbar-button {
+  display: none;
+} 
+
+.div-table::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+.div-table::-webkit-scrollbar-thumb {
+  background-color: #b4b4b421;
+  border-radius: 20px;
+  border: 2px solid #f1f2f3;
+}
+
+.div-table::-webkit-scrollbar-track {
+  border-radius: 10px;  
+  margin: 20px;
+}
+
+.textField {
+  margin: 0px 15px 15px 15px;
+}
+
+.borroso {
+  margin: 5%;
+  background-image: url('../public/assets/f4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;  
+  display: flex;
+  width: 100%;
+}
+
+.text {
+  font-family: 'Poppins';
 }
